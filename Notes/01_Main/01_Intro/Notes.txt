@@ -3,3 +3,6 @@
 
 *) Run Script:
 	-> https://bun.sh/docs/quickstart#run-a-script 
+
+*) File Types:
+	-> https://bun.sh/docs/runtime/loaders

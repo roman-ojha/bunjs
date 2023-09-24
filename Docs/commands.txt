@@ -13,6 +13,8 @@
   -> bun run <script> (Run script defined inside package.json)
   *) Flags:
     -> --bun : https://bun.sh/docs/cli/run#bun
+    -> --hot (which soft reloads the code (without restarting the process) when imported files change.) https://bun.sh/docs/runtime/hot
+    -> --watch (which hard restarts Bun's process when imported files change)
 
 *) Bun Create: https://bun.sh/docs/templates#bun-create
   -> bun create-<template> (to create the template with bun create like react app etc...)
