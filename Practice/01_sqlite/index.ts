@@ -1,15 +1,23 @@
-import { Database } from "bun:sqlite";
+import express from "express";
+import DB from "./db/db";
 
-// const db = new Database(":memory:");
-// const query = db.query("select 'Hello world' as message;");
-// console.log(query.get());
+const app = express();
+const PORT = 8080;
 
-const db = new Database("db.sqlite", { create: true });
+const db = new DB().db;
+
+// const query = db.query(`
+// INSERT INTO user(name) values ('razz roman');
+// `);
+//
+// query.run();
 
 const query = db.query(`
-  CREATE TABLE user(
-    id INT AUTO INCREMENT,
-    name CHAR(50) NOT NULL
-  );
+SELECT * FROM user;
 `);
 query.run();
+console.log(query.all());
+
+// app.listen(() => {
+//   console.log(`Running on http://localhost:${PORT}`);
+// });

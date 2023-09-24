@@ -1,0 +1,2 @@
+*) For WSL:
+  -> source /home/roman-ojha/.bashrc (after bun install using 'curl')
