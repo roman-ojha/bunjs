@@ -1,11 +1,30 @@
 -> bun init (Initialize project)
 -> bun init -y (Initialize project with default input)
 -> bun <file_name> (Run given file)
--> bun run <script> (Run script defined inside package.json)
 -> bun <script> (Run script defined inside package.json)
 -> bun add/install <package_name> (install packages)
 -> bun remove <package_name> (remove package)
 -> bun add -d <dev_package> (install package for dev dependencies)
 -> bun upgrade (upgrade bun binary)
--> bun --watch run <file_name> (run file and auto reload)
--> bun --smol run <file_name) (reduce memory uses at the cost of performance)
+
+*) Bun Run: https://bun.sh/docs/cli/run
+  -> bun --watch run <file_name> (run file and auto reload)
+  -> bun --smol run <file_name) (reduce memory uses at the cost of performance)
+  -> bun run <script> (Run script defined inside package.json)
+  *) Flags:
+    -> --bun : https://bun.sh/docs/cli/run#bun
+
+*) Bun Create: https://bun.sh/docs/templates#bun-create
+  -> bun create-<template> (to create the template with bun create like react app etc...)
+  -> bun create <template> [<destination>] (create template package from npm)
+  -> bun create <user>/<repo> (download the contents of the GitHub repo to disk)
+  -> bun create github.com/<user>/<repo> (download the contents of the GitHub repo to disk)
+  -> bun create <user>/<repo> <destination_folder_name|.> (download the contents of the GitHub repo to disk with given folder name)
+  *) Flags:
+    -> --no-git (download the contents of the GitHub repo to disk not require of git repo)
+    -> --no-install (Skip installing node_modules & tasks)	
+    -> --force (Overwrite existing files)	
+    -> --open	(Start & open in-browser after finish)
+
+
+*) Bun Create from loca template: https://bun.sh/docs/templates#from-a-local-template
