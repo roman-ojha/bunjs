@@ -1,2 +1,5 @@
 *) Quickstart:
 	-> https://bun.sh/docs/quickstart
+
+*) Run Script:
+	-> https://bun.sh/docs/quickstart#run-a-script 
